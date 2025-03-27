@@ -7,12 +7,19 @@ public class CalMain {
 		System.out.println(c.power); // false
 		c.setPower();
 		System.out.println(c.power); // true
-		c.setPower();
-		System.out.println(c.power); // false
+		
+		// c.setPower();
+		// System.out.println(c.power); // false
+		
+		
+		
 		c.setNum(5);
 		System.out.println(c.num); // 5
 		String result = c.checkNum();
 		
 		System.out.println(result);	//홀수
+		
+		System.out.println(c.setRateNum(0.7));
+	
 	}
 }
