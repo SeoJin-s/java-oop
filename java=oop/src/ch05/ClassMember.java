@@ -23,17 +23,29 @@ public class ClassMember {
 				}
 		}
 
-		//2. 생성자 
-		public ClassMember() {
-			
-		}
 
 
-		//3.메소드 
+
+		//2.메소드 
 		public void fun() {
 			System.out.println("Fun()"); // 기능 역활을 하기위해서는 객체가 필요하다	
 		}
 		// ClassMember cm = new ClassMember(); cm.fun <<< 실행하기 위해서는 필요하다 
 		
+		//3. 필드  //필드는 객체의 속성(데이터)을 저장하는 역할 // 필드는 크게 **인스턴스 필드(Instance Field)**와 **정적 필드(Static Field)** 나뉜다
+		public String name;
+		
+		//4. 생성자 // 첫번째 역활은 초기화이다
+				public ClassMember() {	// 없으면 기본형태로 자동으로 생성된다 (컴파일러)
+					//필드 초기화 코드가 없다면 자동으로 코드가 구현된다 (컴파일러)
+					this.name = null;
+				}
+				public class InClass{} // 내부 클래스 ( 클래스안에 클래스를 만듬)
+				public enum Inenum { 	// 내부 이넘
+					x,y
+				}
+				
+				public interface InInterface{} // 내부 인터페이스
+				public @interface InAnnotation{} //내부 에노테이션
 }
 
