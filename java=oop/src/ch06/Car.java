@@ -1,6 +1,26 @@
 package ch06;
 import java.util.ArrayList;
+
 public class Car {
+	// 기본 모양
+		public int num;
+		public boolean is;
+		//생성자 오버로딩
+		public Car() {}
+			
+		public Car(int num,boolean is) {
+			this();
+			this.num = num;
+			this.is = is;
+}
+// this
+	public void  print() {
+		System.out.println(this.num);
+		}
+	
+	}
+/*
+ 
 	//책 247p
 	public int num;
 	public boolean is;
@@ -24,7 +44,7 @@ public class Car {
 		this.list = new ArrayList<String>();
 		list.add("t");
 		}
-	*/
+
 	// 책 255p
 	//기본 생성자 모양으로 자동으로 추가
 		/*public Car() {
@@ -36,8 +56,7 @@ public class Car {
 			this.arr = null;
 			this.list = null;
 			list.add("t");
-			*/
-		
+
 	//책 260p
 	// 일반생성자	
 		public Car(int num) {
@@ -49,7 +68,7 @@ public class Car {
 		public Car(int x) {
 			this.num = x;	//변수라는건 이안에서만 사용할수있다. num 이란건 존재하지않는데 위에 코드를 보면 자바가 알아서 this 를 추가한다
 		}
-		*/
+
 		public Car(boolean is) {
 			// 컴파일러가 일반생성자가 존재하므로 기본생성자를 추가 하지않는다.
 			// 생성자안에 필드초기화 코드가 없다 --> 그러니 추가
@@ -66,3 +85,5 @@ public class Car {
 		public void test() {}
 		public void tset (int x) {}
 }
+
+*/
