@@ -63,9 +63,22 @@ public class MethodEx2 {
 	// 매개 타입 : int
 	// 252 -> {2, 5, 2}
 	public int[] m5a(int num) {	// 나누기 연산
-		int[] result = null;
-		return result;
+		int num2 = num;
+		int i = 0;
+		
+		while (num >= 10) {
+			num = num / 10;
+			i++;
+		}
+	int[] result = new int[ i+1];
+	
+	for (int z= i; z>= 0; z--) {
+		result[z] = num2 % 10;
+		num2 = num2 / 10;
 	}
+	return result;
+}
+
 	// 252 -> {"2","5","2"}
 	public String[] m5b(int num) { // substring() 메소드
 		String[] result = null;

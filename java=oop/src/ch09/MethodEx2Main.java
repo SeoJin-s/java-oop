@@ -52,6 +52,15 @@ public class MethodEx2Main {
 		//
 		Student student = m2.m6a(8,"로빈");
 			System.out.println(m2.m25a(student));
+		System.out.println("==========================================");
+		
+		//
+		int num2 = 100;
+		int i = 10;
+			 for (int z = i; z >= 0; z--) {
+		            System.out.println(z);
+			 }
+		System.out.println("==========================================");
 		
 		
 		//
@@ -65,8 +74,8 @@ public class MethodEx2Main {
 		ArrayList<String> list
 			= new ArrayList<String>();
 		list.add("101");
-		list.add("101");
-		list.add("101");
+		list.add("200");
+		list.add("300");
 		int[] result = m2.m4a(list);
 		if(result != null) {
 		 for (int n : result) {
